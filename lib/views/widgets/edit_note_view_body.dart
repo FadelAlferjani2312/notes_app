@@ -18,7 +18,9 @@ class EditNoteViewBody extends StatelessWidget {
           icon: Icons.check,
         ),
         SizedBox(height: 35,),
-        CustomTextField(hintText: 'Title'),
+        CustomTextField(
+          
+          hintText: 'Title'),
          SizedBox(height: 16,),
 
         CustomTextField(hintText: 'Content' , maxLines: 5,),
