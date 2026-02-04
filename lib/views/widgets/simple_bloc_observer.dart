@@ -24,17 +24,17 @@ class SimpleBolcObserver implements BlocObserver {
     Object? error,
     StackTrace? stackTrace,
   ]) {
-    // TODO: implement onDone
+    debugPrint('onDone = $bloc');
   }
 
   @override
   void onError(BlocBase<dynamic> bloc, Object error, StackTrace stackTrace) {
-    // TODO: implement onError
+    debugPrint('onError = $bloc');
   }
 
   @override
   void onEvent(Bloc<dynamic, dynamic> bloc, Object? event) {
-    // TODO: implement onEvent
+   debugPrint('onEvent = $bloc');
   }
 
   @override
@@ -42,6 +42,6 @@ class SimpleBolcObserver implements BlocObserver {
     Bloc<dynamic, dynamic> bloc,
     Transition<dynamic, dynamic> transition,
   ) {
-    // TODO: implement onTransition
+    debugPrint('onTransition = $bloc');
   }
 }
