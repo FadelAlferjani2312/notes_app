@@ -89,7 +89,7 @@ class _EditNoteColorList extends State<EditNoteColorList> {
             child: GestureDetector(
               onTap: () {
                 currentIndex = index;
-                widget.note.color = kColors[index].value;
+                widget.note.color = kColors[index].toARGB32();
                 setState(() {});
               },
               child: ColorItem(
